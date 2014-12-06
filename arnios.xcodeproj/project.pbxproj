@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0A3C09581A32F05E007549A2 /* AddTodoItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3C09571A32F05E007549A2 /* AddTodoItemViewController.m */; };
 		0A3C095E1A32F148007549A2 /* TodoListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3C095D1A32F148007549A2 /* TodoListTableViewController.m */; };
+		0A3C09611A32FA46007549A2 /* TodoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3C09601A32FA46007549A2 /* TodoItem.m */; };
 		0A7775061A320B8000E3A29E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7775051A320B8000E3A29E /* main.m */; };
 		0A7775091A320B8000E3A29E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7775081A320B8000E3A29E /* AppDelegate.m */; };
 		0A77750C1A320B8000E3A29E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A77750B1A320B8000E3A29E /* ViewController.m */; };
@@ -33,6 +34,8 @@
 		0A3C09571A32F05E007549A2 /* AddTodoItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddTodoItemViewController.m; path = TodoList/AddTodoItemViewController.m; sourceTree = "<group>"; };
 		0A3C095C1A32F148007549A2 /* TodoListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TodoListTableViewController.h; path = TodoList/TodoListTableViewController.h; sourceTree = "<group>"; };
 		0A3C095D1A32F148007549A2 /* TodoListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TodoListTableViewController.m; path = TodoList/TodoListTableViewController.m; sourceTree = "<group>"; };
+		0A3C095F1A32FA46007549A2 /* TodoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TodoItem.h; path = TodoList/TodoItem.h; sourceTree = "<group>"; };
+		0A3C09601A32FA46007549A2 /* TodoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TodoItem.m; path = TodoList/TodoItem.m; sourceTree = "<group>"; };
 		0A7775001A320B8000E3A29E /* arnios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = arnios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A7775041A320B8000E3A29E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A7775051A320B8000E3A29E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -73,6 +76,8 @@
 				0A3C09571A32F05E007549A2 /* AddTodoItemViewController.m */,
 				0A3C095C1A32F148007549A2 /* TodoListTableViewController.h */,
 				0A3C095D1A32F148007549A2 /* TodoListTableViewController.m */,
+				0A3C095F1A32FA46007549A2 /* TodoItem.h */,
+				0A3C09601A32FA46007549A2 /* TodoItem.m */,
 			);
 			name = TodoList;
 			sourceTree = "<group>";
@@ -241,6 +246,7 @@
 				0A77750C1A320B8000E3A29E /* ViewController.m in Sources */,
 				0A7775091A320B8000E3A29E /* AppDelegate.m in Sources */,
 				0A7775061A320B8000E3A29E /* main.m in Sources */,
+				0A3C09611A32FA46007549A2 /* TodoItem.m in Sources */,
 				0A3C09581A32F05E007549A2 /* AddTodoItemViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

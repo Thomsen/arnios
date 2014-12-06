@@ -7,19 +7,37 @@
 //
 
 #import "TodoListTableViewController.h"
+#import "AddTodoItemViewController.h"
+#import "TodoItem.h"
 
 @interface TodoListTableViewController ()
+
+@property NSMutableArray *todoItems;
 
 @end
 
 @implementation TodoListTableViewController
 
 - (IBAction)unwindToList:(UIStoryboardSegue *)segue {
-    
+    AddTodoItemViewController *source = [segue sourceViewController];
+    TodoItem *item = source.todoItem;
+    if (nil != item) {
+        [self.todoItems addObject:item];
+        [self.tableView reloadData];
+    }
+}
+
+- (void) loadInitialData {
+    TodoItem *item = [[TodoItem alloc] init];
+    item.itemName = @"Xcode Menu";
+    [self.todoItems addObject:item];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.todoItems = [[NSMutableArray alloc] init];
+    [self loadInitialData];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -39,24 +57,31 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [self.todoItems count];
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    static NSString *cellIdentifier = @"ListPrototypeCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
+    TodoItem *todoItem = [self.todoItems objectAtIndex:indexPath.row];
+    cell.textLabel.text = todoItem.itemName;
+    
+    if (todoItem.completed) {
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    } else {
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
     
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.
@@ -101,5 +126,12 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (void) tableView:(UITableView *) tableView didSelectRowAtIndexPath: (NSIndexPath *) indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    TodoItem *tappedItem = [self.todoItems objectAtIndex:indexPath.row];
+    tappedItem.completed = !tappedItem.completed;
+    [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
+}
 
 @end

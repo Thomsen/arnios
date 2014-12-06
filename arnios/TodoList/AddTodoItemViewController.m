@@ -8,11 +8,26 @@
 
 #import "AddTodoItemViewController.h"
 
+
 @interface AddTodoItemViewController ()
+
+@property (weak, nonatomic) IBOutlet UITextField *textField;
+
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *doneButton;
 
 @end
 
 @implementation AddTodoItemViewController
+
+- (void) prepareForSegue: (UIStoryboardSegue *)segue sender:(id)sender {
+    // done to add item
+    if (sender != self.doneButton) return ;
+    if (self.textField.text.length > 0) {
+        self.todoItem = [[TodoItem alloc] init];
+        self.todoItem.itemName = self.textField.text;
+        self.todoItem.completed = NO;
+    }
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
