@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A3C09581A32F05E007549A2 /* AddTodoItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3C09571A32F05E007549A2 /* AddTodoItemViewController.m */; };
+		0A3C095E1A32F148007549A2 /* TodoListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3C095D1A32F148007549A2 /* TodoListTableViewController.m */; };
 		0A7775061A320B8000E3A29E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7775051A320B8000E3A29E /* main.m */; };
 		0A7775091A320B8000E3A29E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7775081A320B8000E3A29E /* AppDelegate.m */; };
 		0A77750C1A320B8000E3A29E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A77750B1A320B8000E3A29E /* ViewController.m */; };
@@ -27,6 +29,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A3C09561A32F05E007549A2 /* AddTodoItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AddTodoItemViewController.h; path = TodoList/AddTodoItemViewController.h; sourceTree = "<group>"; };
+		0A3C09571A32F05E007549A2 /* AddTodoItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AddTodoItemViewController.m; path = TodoList/AddTodoItemViewController.m; sourceTree = "<group>"; };
+		0A3C095C1A32F148007549A2 /* TodoListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TodoListTableViewController.h; path = TodoList/TodoListTableViewController.h; sourceTree = "<group>"; };
+		0A3C095D1A32F148007549A2 /* TodoListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TodoListTableViewController.m; path = TodoList/TodoListTableViewController.m; sourceTree = "<group>"; };
 		0A7775001A320B8000E3A29E /* arnios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = arnios.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A7775041A320B8000E3A29E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A7775051A320B8000E3A29E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -60,6 +66,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A3C09551A32EFEB007549A2 /* TodoList */ = {
+			isa = PBXGroup;
+			children = (
+				0A3C09561A32F05E007549A2 /* AddTodoItemViewController.h */,
+				0A3C09571A32F05E007549A2 /* AddTodoItemViewController.m */,
+				0A3C095C1A32F148007549A2 /* TodoListTableViewController.h */,
+				0A3C095D1A32F148007549A2 /* TodoListTableViewController.m */,
+			);
+			name = TodoList;
+			sourceTree = "<group>";
+		};
 		0A7774F71A320B8000E3A29E = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +98,7 @@
 		0A7775021A320B8000E3A29E /* arnios */ = {
 			isa = PBXGroup;
 			children = (
+				0A3C09551A32EFEB007549A2 /* TodoList */,
 				0A7775071A320B8000E3A29E /* AppDelegate.h */,
 				0A7775081A320B8000E3A29E /* AppDelegate.m */,
 				0A77750A1A320B8000E3A29E /* ViewController.h */,
@@ -219,9 +237,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A3C095E1A32F148007549A2 /* TodoListTableViewController.m in Sources */,
 				0A77750C1A320B8000E3A29E /* ViewController.m in Sources */,
 				0A7775091A320B8000E3A29E /* AppDelegate.m in Sources */,
 				0A7775061A320B8000E3A29E /* main.m in Sources */,
+				0A3C09581A32F05E007549A2 /* AddTodoItemViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +432,7 @@
 				0A7775251A320B8000E3A29E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A7775261A320B8000E3A29E /* Build configuration list for PBXNativeTarget "arniosTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +441,7 @@
 				0A7775281A320B8000E3A29E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
