@@ -17,6 +17,7 @@
 		0A7775111A320B8000E3A29E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A7775101A320B8000E3A29E /* Images.xcassets */; };
 		0A7775141A320B8000E3A29E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A7775121A320B8000E3A29E /* LaunchScreen.xib */; };
 		0A7775201A320B8000E3A29E /* arniosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A77751F1A320B8000E3A29E /* arniosTests.m */; };
+		CD6379D020216A3F0037B054 /* AppDependencies.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6379CF20216A3F0037B054 /* AppDependencies.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		0A7775191A320B8000E3A29E /* arniosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = arniosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A77751E1A320B8000E3A29E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A77751F1A320B8000E3A29E /* arniosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = arniosTests.m; sourceTree = "<group>"; };
+		CD6379CF20216A3F0037B054 /* AppDependencies.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDependencies.m; sourceTree = "<group>"; };
+		CD6379D120216A650037B054 /* AppDependencies.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDependencies.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,10 +77,15 @@
 			children = (
 				0A3C09561A32F05E007549A2 /* AddTodoItemViewController.h */,
 				0A3C09571A32F05E007549A2 /* AddTodoItemViewController.m */,
-				0A3C095C1A32F148007549A2 /* TodoListTableViewController.h */,
-				0A3C095D1A32F148007549A2 /* TodoListTableViewController.m */,
+				CDF2E3B2202166CE00C68045 /* Configurator */,
+				CDF2E3B82021675200C68045 /* Interactor */,
+				CDF2E3B72021675100C68045 /* Presenter */,
+				CDF2E3B62021675100C68045 /* Router */,
 				0A3C095F1A32FA46007549A2 /* TodoItem.h */,
 				0A3C09601A32FA46007549A2 /* TodoItem.m */,
+				0A3C095C1A32F148007549A2 /* TodoListTableViewController.h */,
+				0A3C095D1A32F148007549A2 /* TodoListTableViewController.m */,
+				CDF2E3B92021676600C68045 /* View */,
 			);
 			name = TodoList;
 			sourceTree = "<group>";
@@ -112,6 +120,8 @@
 				0A7775101A320B8000E3A29E /* Images.xcassets */,
 				0A7775121A320B8000E3A29E /* LaunchScreen.xib */,
 				0A7775031A320B8000E3A29E /* Supporting Files */,
+				CD6379CF20216A3F0037B054 /* AppDependencies.m */,
+				CD6379D120216A650037B054 /* AppDependencies.h */,
 			);
 			path = arnios;
 			sourceTree = "<group>";
@@ -140,6 +150,46 @@
 				0A77751E1A320B8000E3A29E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CDF2E3B2202166CE00C68045 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Configurator;
+			path = TodoList/Configurator;
+			sourceTree = "<group>";
+		};
+		CDF2E3B62021675100C68045 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Router;
+			path = TodoList/Router;
+			sourceTree = "<group>";
+		};
+		CDF2E3B72021675100C68045 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Presenter;
+			path = TodoList/Presenter;
+			sourceTree = "<group>";
+		};
+		CDF2E3B82021675200C68045 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Interactor;
+			path = TodoList/Interactor;
+			sourceTree = "<group>";
+		};
+		CDF2E3B92021676600C68045 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			path = TodoList/View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +298,7 @@
 				0A7775061A320B8000E3A29E /* main.m in Sources */,
 				0A3C09611A32FA46007549A2 /* TodoItem.m in Sources */,
 				0A3C09581A32F05E007549A2 /* AddTodoItemViewController.m in Sources */,
+				CD6379D020216A3F0037B054 /* AppDependencies.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
