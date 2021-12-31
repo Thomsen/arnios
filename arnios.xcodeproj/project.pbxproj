@@ -3,21 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0A3C09581A32F05E007549A2 /* AddTodoItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3C09571A32F05E007549A2 /* AddTodoItemViewController.m */; };
 		0A3C095E1A32F148007549A2 /* TodoListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3C095D1A32F148007549A2 /* TodoListTableViewController.m */; };
 		0A3C09611A32FA46007549A2 /* TodoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3C09601A32FA46007549A2 /* TodoItem.m */; };
-		0A7775061A320B8000E3A29E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7775051A320B8000E3A29E /* main.m */; };
-		0A7775091A320B8000E3A29E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7775081A320B8000E3A29E /* AppDelegate.m */; };
 		0A77750C1A320B8000E3A29E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A77750B1A320B8000E3A29E /* ViewController.m */; };
 		0A77750F1A320B8000E3A29E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A77750D1A320B8000E3A29E /* Main.storyboard */; };
 		0A7775111A320B8000E3A29E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A7775101A320B8000E3A29E /* Images.xcassets */; };
 		0A7775141A320B8000E3A29E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A7775121A320B8000E3A29E /* LaunchScreen.xib */; };
 		0A7775201A320B8000E3A29E /* arniosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A77751F1A320B8000E3A29E /* arniosTests.m */; };
+		CD249EE7267B4138005D96B9 /* OnClickListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD249EE6267B4138005D96B9 /* OnClickListener.swift */; };
 		CD6379D020216A3F0037B054 /* AppDependencies.m in Sources */ = {isa = PBXBuildFile; fileRef = CD6379CF20216A3F0037B054 /* AppDependencies.m */; };
+		CDE3FC6F26785E210087A76C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE3FC6E26785E210087A76C /* AppDelegate.swift */; };
+		CDE3FC72267861830087A76C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE3FC71267861830087A76C /* Foundation.framework */; };
+		CDE3FC74267862270087A76C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDE3FC73267862270087A76C /* UIKit.framework */; };
+		CDE3FCE9267B248A0087A76C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7775081A320B8000E3A29E /* AppDelegate.m */; };
+		CDE3FCEB267B2A510087A76C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE3FCEA267B2A510087A76C /* SceneDelegate.swift */; };
+		CDE3FCEE267B2E180087A76C /* ListTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE3FCED267B2E180087A76C /* ListTodoViewController.swift */; };
+		CDE3FCF0267B31CD0087A76C /* TodoMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDE3FCEF267B31CD0087A76C /* TodoMain.storyboard */; };
+		CDE3FCF2267B39F80087A76C /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CDE3FCF1267B39F80087A76C /* Podfile */; };
+		DF06293398071798BDF5682F /* Pods_arnios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D14953657EDF771EE6AA48EA /* Pods_arnios.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,8 +58,19 @@
 		0A7775191A320B8000E3A29E /* arniosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = arniosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A77751E1A320B8000E3A29E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A77751F1A320B8000E3A29E /* arniosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = arniosTests.m; sourceTree = "<group>"; };
+		48D2E3AA06046940F81BE32B /* Pods-arnios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-arnios.release.xcconfig"; path = "Target Support Files/Pods-arnios/Pods-arnios.release.xcconfig"; sourceTree = "<group>"; };
+		CD249EE6267B4138005D96B9 /* OnClickListener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnClickListener.swift; sourceTree = "<group>"; };
 		CD6379CF20216A3F0037B054 /* AppDependencies.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDependencies.m; sourceTree = "<group>"; };
 		CD6379D120216A650037B054 /* AppDependencies.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDependencies.h; sourceTree = "<group>"; };
+		CDE3FC6E26785E210087A76C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CDE3FC71267861830087A76C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CDE3FC73267862270087A76C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CDE3FCEA267B2A510087A76C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CDE3FCED267B2E180087A76C /* ListTodoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTodoViewController.swift; sourceTree = "<group>"; };
+		CDE3FCEF267B31CD0087A76C /* TodoMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TodoMain.storyboard; sourceTree = "<group>"; };
+		CDE3FCF1267B39F80087A76C /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		D14953657EDF771EE6AA48EA /* Pods_arnios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_arnios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFC88969A5E7C137E6891A2B /* Pods-arnios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-arnios.debug.xcconfig"; path = "Target Support Files/Pods-arnios/Pods-arnios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +78,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDE3FC72267861830087A76C /* Foundation.framework in Frameworks */,
+				CDE3FC74267862270087A76C /* UIKit.framework in Frameworks */,
+				DF06293398071798BDF5682F /* Pods_arnios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +118,8 @@
 				0A7775021A320B8000E3A29E /* arnios */,
 				0A77751C1A320B8000E3A29E /* arniosTests */,
 				0A7775011A320B8000E3A29E /* Products */,
+				CDE3FC70267861830087A76C /* Frameworks */,
+				313ADA3E3F463080798D1E33 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,8 +135,11 @@
 		0A7775021A320B8000E3A29E /* arnios */ = {
 			isa = PBXGroup;
 			children = (
+				CD249EE5267B4120005D96B9 /* Extension */,
+				CDE3FCEC267B2DE80087A76C /* TodoListSwift */,
 				0A3C09551A32EFEB007549A2 /* TodoList */,
 				0A7775071A320B8000E3A29E /* AppDelegate.h */,
+				CDE3FC6E26785E210087A76C /* AppDelegate.swift */,
 				0A7775081A320B8000E3A29E /* AppDelegate.m */,
 				0A77750A1A320B8000E3A29E /* ViewController.h */,
 				0A77750B1A320B8000E3A29E /* ViewController.m */,
@@ -122,6 +149,8 @@
 				0A7775031A320B8000E3A29E /* Supporting Files */,
 				CD6379CF20216A3F0037B054 /* AppDependencies.m */,
 				CD6379D120216A650037B054 /* AppDependencies.h */,
+				CDE3FCEA267B2A510087A76C /* SceneDelegate.swift */,
+				CDE3FCEF267B31CD0087A76C /* TodoMain.storyboard */,
 			);
 			path = arnios;
 			sourceTree = "<group>";
@@ -150,6 +179,42 @@
 				0A77751E1A320B8000E3A29E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		313ADA3E3F463080798D1E33 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CDE3FCF1267B39F80087A76C /* Podfile */,
+				DFC88969A5E7C137E6891A2B /* Pods-arnios.debug.xcconfig */,
+				48D2E3AA06046940F81BE32B /* Pods-arnios.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CD249EE5267B4120005D96B9 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CD249EE6267B4138005D96B9 /* OnClickListener.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		CDE3FC70267861830087A76C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDE3FC73267862270087A76C /* UIKit.framework */,
+				CDE3FC71267861830087A76C /* Foundation.framework */,
+				D14953657EDF771EE6AA48EA /* Pods_arnios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CDE3FCEC267B2DE80087A76C /* TodoListSwift */ = {
+			isa = PBXGroup;
+			children = (
+				CDE3FCED267B2E180087A76C /* ListTodoViewController.swift */,
+			);
+			path = TodoListSwift;
 			sourceTree = "<group>";
 		};
 		CDF2E3B2202166CE00C68045 /* Configurator */ = {
@@ -199,9 +264,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A7775231A320B8000E3A29E /* Build configuration list for PBXNativeTarget "arnios" */;
 			buildPhases = (
+				39D7C446C8EC03915274E286 /* [CP] Check Pods Manifest.lock */,
 				0A7774FC1A320B8000E3A29E /* Sources */,
 				0A7774FD1A320B8000E3A29E /* Frameworks */,
 				0A7774FE1A320B8000E3A29E /* Resources */,
+				8C3A1700EBBEF24C3E3CA4CD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -241,6 +308,7 @@
 				TargetAttributes = {
 					0A7774FF1A320B8000E3A29E = {
 						CreatedOnToolsVersion = 6.0.1;
+						LastSwiftMigration = 0930;
 					};
 					0A7775181A320B8000E3A29E = {
 						CreatedOnToolsVersion = 6.0.1;
@@ -249,10 +317,11 @@
 				};
 			};
 			buildConfigurationList = 0A7774FB1A320B8000E3A29E /* Build configuration list for PBXProject "arnios" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -272,7 +341,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDE3FCF2267B39F80087A76C /* Podfile in Resources */,
 				0A77750F1A320B8000E3A29E /* Main.storyboard in Resources */,
+				CDE3FCF0267B31CD0087A76C /* TodoMain.storyboard in Resources */,
 				0A7775141A320B8000E3A29E /* LaunchScreen.xib in Resources */,
 				0A7775111A320B8000E3A29E /* Images.xcassets in Resources */,
 			);
@@ -287,18 +358,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		39D7C446C8EC03915274E286 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-arnios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8C3A1700EBBEF24C3E3CA4CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-arnios/Pods-arnios-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-arnios/Pods-arnios-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-arnios/Pods-arnios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0A7774FC1A320B8000E3A29E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDE3FCE9267B248A0087A76C /* AppDelegate.m in Sources */,
+				CD249EE7267B4138005D96B9 /* OnClickListener.swift in Sources */,
+				CDE3FC6F26785E210087A76C /* AppDelegate.swift in Sources */,
 				0A3C095E1A32F148007549A2 /* TodoListTableViewController.m in Sources */,
 				0A77750C1A320B8000E3A29E /* ViewController.m in Sources */,
-				0A7775091A320B8000E3A29E /* AppDelegate.m in Sources */,
-				0A7775061A320B8000E3A29E /* main.m in Sources */,
 				0A3C09611A32FA46007549A2 /* TodoItem.m in Sources */,
 				0A3C09581A32F05E007549A2 /* AddTodoItemViewController.m in Sources */,
 				CD6379D020216A3F0037B054 /* AppDependencies.m in Sources */,
+				CDE3FCEB267B2A510087A76C /* SceneDelegate.swift in Sources */,
+				CDE3FCEE267B2E180087A76C /* ListTodoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +477,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -378,10 +495,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -406,6 +524,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -416,38 +535,55 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		0A7775241A320B8000E3A29E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DFC88969A5E7C137E6891A2B /* Pods-arnios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = arnios/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.anyuan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		0A7775251A320B8000E3A29E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48D2E3AA06046940F81BE32B /* Pods-arnios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = arnios/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.anyuan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 		0A7775271A320B8000E3A29E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -458,7 +594,11 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = arniosTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.anyuan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/arnios.app/arnios";
@@ -468,13 +608,18 @@
 		0A7775281A320B8000E3A29E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = arniosTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.anyuan.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/arnios.app/arnios";
